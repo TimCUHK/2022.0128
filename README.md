@@ -1,13 +1,13 @@
 [![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-# CacheTest
+# Automation of Strategic Data Prioritization in System Model Calibration: Sensor Placement
 
 This archive is distributed in association with the [INFORMS Journal on
 Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
 The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0000) by T. Ralphs. 
+(https://doi.org/10.1287/ijoc.2022.0128) by Tianyi Li and Munther Dahleh
 The snapshot is based on 
 [this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
 in the development repository. 
@@ -20,87 +20,61 @@ get a more recent version or would like support**
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+https://doi.org/10.1287/ijoc.2022.0128
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+https://doi.org/10.1287/ijoc.2022.0128.cd
 
 Below is the BibTex for citing this snapshot of the respoitory.
 
 ```
-@article{CacheTest,
-  author =        {T. Ralphs},
+@article{Automation of Strategic Data Prioritization in System Model Calibration: Sensor Placement,
+  author =        {T. Li and M. Dahleh},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
+  title =         {{Automation of Strategic Data Prioritization in System Model Calibration: Sensor Placement}},
+  year =          {2023},
+  doi =           {10.1287/ijoc.2022.0128.cd},
+  url =           {https://github.com/INFORMSJoC/2022.0128},
 }  
 ```
 
 ## Description
 
-The goal of this software is to demonstrate the effect of cache optimization.
+The goal of this software is to document the files for conducting sensor placement at system model calibration. 
 
-## Building
+## Source files
 
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
+The software is written in Python. The Python package networkx is needed, besides basic packages.
 
-```
-make mult
-```
-
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
+To edit the functions (not recommended):
 
 ```
-make clean
-make sum
+vim funcs.py
 ```
 
-Be sure to make clean before building a different version of the code.
+To edit the parameters (key parameters to edit: handle, k, solver, Matlab_file):
+
+```
+vim params.py
+```
+
+To run the algorithm:
+
+```
+python3 main.py
+```
+
+In the data folder, two data files of system models are stored in .mat format. To input a new system model, please convert the model structure into the same format (e.g., using Matlab)
 
 ## Results
 
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+Show figures in the main text and the online supplement.
 
-![Figure 1](results/mult-test.png)
+## Scripts for replication
 
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+Show sample script for replicating the results in Figure 7. 
 
-![Figure 1](results/sum-test.png)
+Change parameters: handle (method for sensor placement), k_max (maximum number of sensors to be placed), d (existing data availability).
 
-## Replicating
+## Contact
 
-To replicate the results in [Figure 1](results/mult-test), do either
-
-```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
-
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
-
-## Ongoing Development
-
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
-
-## Support
-
-For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
+Please contact tianyi.li@cuhk.edu.hk for questions regarding the software or the paper.
