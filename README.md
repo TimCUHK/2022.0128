@@ -5,8 +5,7 @@
 This archive is distributed in association with the [INFORMS Journal on
 Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
-The software and data in this repository are a snapshot of the software and data
-that were used in the research reported on in the paper 
+The software and data in this repository are the software and data used in the research 
 (https://doi.org/10.1287/ijoc.2022.0128) by Tianyi Li and Munther Dahleh.
 
 ## Cite
@@ -17,7 +16,7 @@ https://doi.org/10.1287/ijoc.2022.0128
 
 https://doi.org/10.1287/ijoc.2022.0128.cd
 
-Below is the BibTex for citing this snapshot of the respoitory.
+Below is the BibTex for citing this snapshot of the repository.
 
 ```
 @article{Automation of Strategic Data Prioritization in System Model Calibration: Sensor Placement,
@@ -56,7 +55,7 @@ To run the algorithm:
 python3 main.py
 ```
 
-In the data folder, two data files of system models are stored in .mat format. To input a new system model, please convert the model structure into the same format (e.g., using Matlab)
+In the data folder, two data files of system models are stored in .mat format. To input a new system model, please convert the model structure into the same format (e.g., using Matlab).
 
 ## Results
 
