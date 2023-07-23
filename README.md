@@ -23,7 +23,7 @@ Below is the BibTex for citing this snapshot of the respoitory.
 @article{Automation of Strategic Data Prioritization in System Model Calibration: Sensor Placement,
   author =        {T. Li and M. Dahleh},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{Automation of Strategic Data Prioritization in System Model Calibration: Sensor Placement}},
+  title =         {Automation of Strategic Data Prioritization in System Model Calibration: Sensor Placement},
   year =          {2023},
   doi =           {10.1287/ijoc.2022.0128.cd},
   url =           {https://github.com/INFORMSJoC/2022.0128},
