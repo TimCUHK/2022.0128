@@ -28,6 +28,6 @@ solver = 1              # 1 - brute force; 2 - simulated annealing; 3 - sequenti
 
 # Model: O2004 / OS2001 #
 
-Matlab_file = sio.loadmat('data/O2004.mat')   # 'data/OS2001.mat'
+Matlab_file = sio.loadmat('../data/O2004.mat')   # 'data/OS2001.mat'
 
 
