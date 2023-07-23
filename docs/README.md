@@ -1,7 +1,3 @@
-## Additional documentation
+#Online Supplement
 
-Here is some additional documentation, which could appear at
-
-https://INFORMSJoc.github.io/JoCTemplate
-
-if we set it up that way.
+Online Supplement for "Automation of Strategic Data Prioritization in System Model Calibration: Sensor Placement"
